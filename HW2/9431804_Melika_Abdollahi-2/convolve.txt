@@ -1,0 +1,11 @@
+clear all
+close all
+n=-5:1:13;
+x=[0 1 0 -1 0 -1 1 1 0 0];
+h=[0 0 -1 1 0 1 0 0 0 0 ];
+y=conv(x,h);
+figure(1);
+stem(n,y);
+xlabel('n');
+ylabel('convolution');
+title('convolve');
